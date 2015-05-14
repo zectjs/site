@@ -1,10 +1,10 @@
-title: Hexo
-subtitle: "A fast, simple & powerful blog framework powered by Node.js."
-description: "Hexo is a fast, simple & powerful blog framework powered by Node.js."
-author: Tommy Chen
+title: Zectjs-Site
+subtitle: ""
+description: ""
+author: "xx"
 language: en
 timezone: UTC
-url: http://hexo.io
+url: http:///zectjs.github.io
 root: /
 permalink: blog/:year/:month/:day/:title/
 archive_dir: blog
@@ -19,11 +19,11 @@ per_page: 0
 theme: zectjs
 deploy:
   type: git
-  repo: git@github.com:hexojs/hexojs.github.io.git
+  repo: git@github.com:zectjs/zectjs.github.io.git
 
-disqus_shortname: hexojs
+disqus_shortname: /zectjs
 google_analytics: UA-4910098-10
 fb_admins: 100000247608790
 swiftype_key: EwN4HMy_KMxTK_GMjV1z
-twitter: hexojs
-github: hexojs/hexo
+twitter: /zectjs
+github: zectjs
