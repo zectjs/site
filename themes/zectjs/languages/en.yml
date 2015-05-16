@@ -1,5 +1,5 @@
 menu:
-  docs: Guide
+  guide: Guide
   api:  API Reference
   blog: Blog
 
@@ -15,7 +15,7 @@ page:
   last_updated: "Last updated: %s"
 
 sidebar:
-  docs:
+  guide:
     getting_started: Getting Started
     overview: Overview
     setup: Setup

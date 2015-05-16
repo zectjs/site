@@ -11,6 +11,7 @@
   <div class="wrapper">
     <div class="inner">
       {{ page.content }}
+      {{site}}
       <ul id="intro-cmd-wrap">
         <li class="intro-cmd-item">npm install hexo-cli -g</li>
         <li class="intro-cmd-item">hexo init blog</li>

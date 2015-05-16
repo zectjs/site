@@ -7,7 +7,7 @@
   var disqus_url = '{{ url }}';
   var disqus_title = {{ JSON.stringify(page.title) }};
   var disqus_config = function(){
-    this.language = '{{ disqus_lang() }}';
+    this.language = 'en';
   };
   (function(){
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

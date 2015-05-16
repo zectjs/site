@@ -12,6 +12,7 @@ function startsWith(str, start){
   return str.substring(0, start.length) === start;
 }
 
+
 hexo.extend.helper.register('page_nav', function(){
   var type = this.page.canonical_path.split('/')[0];
   var sidebar = this.site.data.sidebar[type];
@@ -44,7 +45,9 @@ hexo.extend.helper.register('page_nav', function(){
 
 hexo.extend.helper.register('doc_sidebar', function(className){
   var type = this.page.canonical_path.split('/')[0];
+  var type = 'zh-tw'
   var sidebar = this.site.data.sidebar[type];
+  console.log(sidebar)
   var path = pathFn.basename(this.path);
   var result = '';
   var self = this;
@@ -72,7 +75,7 @@ hexo.extend.helper.register('header_menu', function(className){
   var isEnglish = lang === 'en';
 
   _.each(menu, function(path, title){
-    // if (!isEnglish && ~localizedPath.indexOf(title)) path = lang + path;
+    if (!isEnglish && ~localizedPath.indexOf(title)) path = lang + path;
 
     result += '<li class="' + className + '-item">';
     result += '<a href="' + self.url_for(path) + '" class="' + className + '-link">' + self.__('menu.' + title) + '</a>';
@@ -87,17 +90,6 @@ hexo.extend.helper.register('canonical_url', function(lang){
   if (lang && lang !== 'en') path = lang + '/' + path;
 
   return this.config.url + '/' + path;
-});
-
-hexo.extend.helper.register('url_for_lang', function(path){
-  
-
-  var lang = this.page.lang;
-  var url = this.url_for(path);
-  console.log(lang, this.page.lang)
-  if (lang !== 'en' && url[0] === '/') url = '/' + lang + url;
-
-  return url;
 });
 
 hexo.extend.helper.register('raw_link', function(path){
@@ -144,17 +136,4 @@ hexo.extend.helper.register('canonical_path_for_nav', function(){
   } else {
     return '';
   }
-});
-
-hexo.extend.helper.register('lang_name', function(lang){
-  console.log(this.site.data.languages)
-  var data = this.site.data.languages[lang];
-  return data.name || data;
-});
-
-hexo.extend.helper.register('disqus_lang', function(){
-  var lang = this.page.lang;
-  var data = this.site.data.languages[lang];
-
-  return data.disqus_lang || lang;
 });
