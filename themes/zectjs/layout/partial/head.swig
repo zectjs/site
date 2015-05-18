@@ -34,6 +34,4 @@
     fb_admins: config.fb_admins,
     twitter_site: config.twitter
   }) }}
-  <!-- Swiftype -->
-  <meta class="swiftype" name="title" data-type="string" content="{{ page.title || config.title }}">
 </head>
