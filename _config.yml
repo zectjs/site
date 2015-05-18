@@ -4,7 +4,7 @@ description: ""
 author: "xx"
 language: en
 timezone: UTC
-url: http:///zectjs.github.io
+url: http://zectjs.github.io
 root: /
 permalink: blog/:year/:month/:day/:title/
 archive_dir: blog
@@ -22,8 +22,4 @@ deploy:
   repo: git@github.com:zectjs/zectjs.github.io.git
 
 disqus_shortname: /zectjs
-google_analytics: UA-4910098-10
-fb_admins: 100000247608790
-swiftype_key: EwN4HMy_KMxTK_GMjV1z
-twitter: /zectjs
 github: zectjs
