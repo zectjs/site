@@ -1,12 +1,7 @@
 guide:
-  getting_started:
-    overview: index.html
-
+	overview: index.html
 api:
-  core:
-    overview: index.html
-
+	overview: index.html
 examples:
-    examples:
-        index: index.html
-        todo: todo.html
+	index: index.html
+  todo: todo.html
