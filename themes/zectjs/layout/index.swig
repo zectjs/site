@@ -1,16 +1,28 @@
 <header id="banner" class="wrapper">
+  
   <div class="inner">
-    <h2 id="banner-title">{{ page.subtitle }}</h2>
+    
+    <ul class="nav">
+      
+    </ul>
+      
+    <img id="logo" src="/logo.png"></img>
+    <h1>Zectjs</h1>
+    <p class="sub">MVVM Made Simple</p>
+    <p class="desc">
+      Vue.js is a library for building interactive web interfaces. 
+      <br>
+      It provides data-reactive components with a simple and flexible API.
+    </p>
 
     <div id="banner-start">
-      <span id="banner-start-command">npm install hexo-cli -g</span>
-      <a id="banner-start-link" href="docs/">
-        <i class="fa fa-arrow-right"></i>
-      </a>
+      <a href="/guide" class="button">Get Zectjs</a>
+      <a href="" target="_blank" class="button">Source on GitHub</a>
     </div>
 
     <div id="banner-share">{{ partial('partial/share') }}</div>
   </div>
+
 </header>
 
 <div id="content-wrap">
