@@ -24,7 +24,7 @@
             <div id="article-toc-inner">
               <strong class="sidebar-title">Contents</strong>
               {{ toc(page.content, {list_number: false}) }}
-              <a href="#" id="article-toc-top">back_to_top</a>
+              <a href="#" id="article-toc-top">back to top</a>
             </div>
           </aside>
         </div>

@@ -9,7 +9,7 @@
         <p class="desc">Zect.js is a library for building interactive web interfaces.
             <br>It provides data-reactive components with a simple and flexible API.</p>
         <p class="buttons">
-            <a href="/guide/" class="button">Get Zect.js v0.11.10</a>
+            <a href="/guide/" class="button">Get Zect.js</a>
             <a href="https://github.com/switer/Zect" target="_blank" class="button">Source on GitHub</a>
         </p>
         <ul id="social">

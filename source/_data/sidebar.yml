@@ -1,7 +1,23 @@
 guide:
 	overview: index.html
 api:
-	overview: index.html
+	index: index.html
+	Directives: Directives.html
+	Global-API: Global-API.html
+	Instance-Methods: Instance-Methods.html
+	Instance-Options: Instance-Options.html
+	Instance-Properties: Instance-Properties.html
+	Lifecyle-Methods: Lifecyle-Methods.html
+	Template-Syntax: Template-Syntax.html
 examples:
 	index: index.html
-  todo: todo.html
+  	todo: todo.html
+
+
+
+
+
+
+
+
+

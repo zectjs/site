@@ -59,10 +59,15 @@ hexo.extend.helper.register('header_menu', function(className){
   var menu = this.site.data.menu;
   var result = '';
   var self = this;
+  var curPath = this.path
 
   _.each(menu, function (path, title){
+    var itemClass = className + '-link'
+    
+    if (curPath.indexOf(title.toLowerCase()) !== -1) itemClass += ' current'
+
     result += '<li class="' + className + '-item">';
-    result += '<a href="' + self.url_for(path) + '" class="' + className + '-link">' + title + '</a>';
+    result += '<a href="' + self.url_for(path) + '" class="' + itemClass + '">' + title + '</a>';
     result += '</li>';
   });
 
