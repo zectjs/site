@@ -1,13 +1,15 @@
 <header id="header" class="wrapper">
   <div id="header-inner" class="inner">
     <h1 id="logo-wrap">
-      <a href="/" id="logo">Hexo</a>
+      <a href="/" id="logo-min">Hexo</a>
     </h1>
     <nav id="main-nav">
       <ul>
         {{ header_menu('main-nav') }}
         <li class="main-nav-item">
-          <a href="https://github.com/{{ config.github }}" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+          <a href="https://github.com/{{ config.github }}" class="main-nav-link">
+            GITHUB
+          </a>
         </li>
       </ul>
     </nav>

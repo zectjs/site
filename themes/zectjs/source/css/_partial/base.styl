@@ -1,17 +1,14 @@
-// global-reset()
-
-html
-  box-sizing: border-box
+global-reset()
 
 *, *:before, *:after
-  // box-sizing: inherit
+  box-sizing: inherit
 
 button
 input[type="reset"]
 input[type="button"]
 input[type="submit"]
   &::-moz-focus-inner
-    padding: 0
+    padding: -10
     margin: 0
     border: 0
 
@@ -26,7 +23,7 @@ html, body
     overflow: hidden
 
 body
-  background: color-navy
+  background: #fff
   font-size: font-size
   font-family: font-sans
   color: color-default
@@ -34,6 +31,11 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   position: relative
+
+h1, h2, h3, h4, strong
+  font-weight 600
+  color #2c3e50
+
 
 .wrapper
   clearfix()

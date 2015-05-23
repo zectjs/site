@@ -1,131 +1,237 @@
-#banner
-  text-align: center
-  background-color #fff
-  h1 
+#nav
+  list-style-type none
+  text-align center
+  margin-bottom 3em
+  padding 0
+  li
+    display inline-block  
+    &:last-child
+      .nav-link
+        margin-right 0
+        font-size 16px
+
+.nav-link
+  color #7f8c8d
+  padding-bottom 3px
+  margin 0 1.5em
+  text-decoration none
+  &:first-child
+    margin-left 0
+  .current
+  &:hover
+    border-bottom 3px solid #42b983
+    -webkit-transform scale(1.05)
+    -moz-transform scale(1.05)
+    -ms-transform scale(1.05)
+    transform scale(1.05)
+      
+#logo
+  display block
+  margin 0 auto
+  width 200px
+
+#hero
+  text-align center
+  height 100%
+  min-height 800px
+  position relative
+  @media mq-phone
+    min-height 560px
+  .hero-inner
+    height 640px
+    width 100%
+    position absolute
+    top 50%
+    margin-top -360px
+    left 0
+    @media mq-phone
+      height 600px
+      margin-top -300px
+  h1
     font-family 'Lato', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
     font-size 3em
     margin 0.5em 0 0
+    @media mq-phone
+      font-size 1em
+  .sub
+    color #34495e
+    font-size 1.2em
+    margin 1em 0
+  .warning
+    color #7f8c8d
   .desc
     max-width 800px
     padding 0 20px
     text-align center
     margin 1.5em auto
     color #7f8c8d
-  .sub
-    color #34495e
-    font-size 1.2em
-
-#banner-title
-  padding-top: 20px
-  font-size: 40px
-  line-height: 1.15
-  font-weight: 300
-  font-family: font-title
-  @media mq-normal
-    padding-top: 100px
-    font-size: 50px
-
-#banner-start
-  text-align: center
-  padding: 40px 0
+    line-height 1.4em
+  .down
+    position absolute
+    bottom 0
+    width 100%
+    left 0
+    padding 1.5em 0
+  .down img
+    width 20px
   a.button
-    display: inline-block;
-    font-size: 1.2em;
-    color: #0e83cd;
-    font-weight: 700;
-    padding: 12px 24px;
-    border-radius: 24px;
-    border: 2px solid #0e83cd;
-    transition: all 0.15s ease;
-    margin 5px 0
-    text-decoration none
     width 180px
-  @media mq-normal
-    padding: 60px 0
-    font-size: 18px
-    a.button
-      width 180px
+    margin 0.5em
+    display inline-block
+    font-size 1.2em
+    color color-link
+    font-weight 700
+    background-color #fff
+    padding 12px 24px
+    border-radius 24px
+    border 2px solid color-link
+    transition all 0.15s ease
+    text-decoration none
+    line-height 28px
+    &:hover
+      color #fff
+      -webkit-transform scale(1.03)
+      transform scale(1.03)
+      background-color color-link
     
 
-#banner-share
-  padding-bottom: 60px
-  @media mq-normal
-    display: block
+#social
+  text-align center
+  list-style-type none
+  margin 0
+  padding 0
+  padding-left 14px
+  margin-top 2em
+  li
+    display inline-block
+    margin 0 5px
+    width 95px
 
-#intro-feature-list
-  padding-top: 20px
-  display: flex
-  flex-flow: column
-  @media mq-normal
-    flex-flow: row wrap
+  
+#features
+  padding 3em 0
+  text-align center
+  background-color #f9f9f9
+  .cool
+    font-size 1.8em
+    text-align center
+    margin-top 1em
+    color #7f8c8d
+  .feats
+    max-width 1200px
+    margin 0 auto
+  .feat
+    box-sizing border-box
+    -moz-box-sizing border-box
+    display inline-block
+    text-align left
+    vertical-align top
+    width 280px
+    margin 40px
+  .feat h2
+    color #34495e
+    line-height 40px
+    margin-bottom 0
+    font-size 1.5em
+  .feat p
+    color #7f8c8d
+    margin 0.4em 0
+  .feat a
+    color #42b983
+    font-weight 600
 
-.intro-feature-wrap
-  padding-top: 20px
-  @media mq-normal
-    flex: 0 0 50%
-    padding-top: 50px
+#why
+  padding 4em 0
+  background-color #0e83cd
+  color #fff
+  h2
+    margin-bottom 20px
+    color #fff
+    font-size 1.5em
+    text-align center
+  ul
+    line-height 1.8em
+    font-size 1.15em
+    width 320px
+    margin 0 auto
+    padding 0
+    list-style-type none
+    
+#footer-index
+  text-align center
+  color #fff
+  padding 4em 0
+  background-color #7f8c8d
+  .avatar
+    width 100px
+    border-radius 100%
+    margin 2.5em 0 1em
+  p
+    margin 0.3em 0
+  a
+    color #fff
+    text-decoration underline
+  a.start
+    font-size 1.2em
+    text-decoration none
+    text-transform uppercase
+    letter-spacing 1px
+    border 1px solid #fff
+    display inline-block
+    padding 12px 20px
+    border-radius 25px
+    transition all 0.15s ease
+    margin-bottom 2em
+    &:hover
+      background-color #fff
+      color #7f8c8d
+      -webkit-transform scale(1.05)
+      -moz-transform scale(1.05)
+      -ms-transform scale(1.05)
+      transform scale(1.05)
+  
+@media screen and (max-width: 420px)
+  body
+    font-size 14px
+  #nav
+    margin 2em 0
+  #logo
+    width 100px
+  .nav-link
+    font-size 0.85em
+    margin 0 0.5em
+  #hero
+    a.button
+      font-size 1em
+      margin 0.5em 0
+    .sub
+      font-size 1em
+    .warning
+    .desc
+      font-size 0.9em
+      margin 1em 0
+      br
+        display none      
+    .down
+      display none
 
-.intro-feature
-  position: relative
-  text-align: center
-  @media mq-normal
-    text-align: left
-    padding-left: 70px
+  #social
+    margin-top 1.5em
+    li
+      width 90px
+  #features 
+    .feat
+      font-size 14px
+      margin 0.8em 0
+      width 250px
+  #why 
+    ul
+      width 280px
+      font-size 1.1em
+    h2
+      font-size 1.4em
 
-.intro-feature-icon
-  color: color-link
-  font-size: 36px
-  padding-bottom: 26px
-  text-align: center
-  @media mq-normal
-    position: absolute
-    top: 0
-    left: 20px
-    font-size: 24px
-    width: @font-size
-
-.intro-feature-title
-  color: color-link
-  font-family: font-title
-  font-size: 24px
-
-.intro-feature-desc
-  margin: line-height 0
-  line-height: line-height
-
-#intro-cmd-wrap
-  max-width: 700px
-  background: #eee
-  padding: 15px 0
-  margin: 25px gutter-width * -1 0
-  @media mq-normal
-    margin: 50px auto 0
-
-.intro-cmd-item
-  font-size: 16px
-  font-family: font-mono
-  line-height: 2
-  padding: 0 30px
-  &:before
-    content: "$"
-    color: color-link
-    padding-right: 15px
-
-#intro-get-started-wrap
-  text-align: center
-
-#intro-get-started-link
-  font-size: 18px
-  font-family: font-title
-  display: inline-block
-  color: color-link
-  text-decoration: none
-  margin: 40px 0
-  border: 3px solid
-  border-color: lighten(color-link, 20%)
-  padding: 12px 24px
-  position: relative
-  transition: 0.2s
-  &:hover
-    background: @border-color
-    color: #fff
+@media screen and (max-width: 860px)
+  #features
+  #hero
+    font-size 16px
