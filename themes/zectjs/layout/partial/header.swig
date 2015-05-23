@@ -1,5 +1,5 @@
-<header id="header" class=>
-  <div id="header-inner" class="inner">
+<header id="header">
+  <div id="header-inner" class="inner wrapper">
     <h1 id="logo-wrap">
       <a href="/" id="logo-min">Hexo</a>
     </h1>
