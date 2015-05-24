@@ -75,7 +75,7 @@ hexo.extend.helper.register('header_menu', function(className){
 });
 
 hexo.extend.helper.register('raw_link', function(path){
-  return 'https://github.com/hexojs/site/edit/master/source/' + path;
+  return 'https://github.com/zectjs/site/edit/master/source/' + path;
 });
 
 hexo.extend.helper.register('page_anchor', function(str){
