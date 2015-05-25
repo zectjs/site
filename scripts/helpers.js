@@ -6,7 +6,6 @@ var url = require('url');
 var cheerio = require('cheerio');
 var lunr = require('lunr');
 
-var localizedPath = ['docs', 'api'];
 
 function startsWith(str, start){
   return str.substring(0, start.length) === start;
