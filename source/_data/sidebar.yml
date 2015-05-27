@@ -1,23 +1,15 @@
 guide:
-	overview: index.html
+	Overview: overview.html
+	Custom Directive: custom-directive.html
+	Two Way Binding: two-way-binding.html
+	Filter Expression: filter-expression.html
 api:
-	index: index.html
 	Directives: Directives.html
-	Global-API: Global-API.html
-	Instance-Methods: Instance-Methods.html
-	Instance-Options: Instance-Options.html
-	Instance-Properties: Instance-Properties.html
-	Lifecyle-Methods: Lifecyle-Methods.html
-	Template-Syntax: Template-Syntax.html
+	Global API: Global-API.html
+	Instance Methods: Instance-Methods.html
+	Instance Options: Instance-Options.html
+	Instance Properties: Instance-Properties.html
+	Lifecyle Methods: Lifecyle-Methods.html
+	Template Syntax: Template-Syntax.html
 examples:
-	index: index.html
-  	todoMVC: todo.html
-
-
-
-
-
-
-
-
-
+	Overview: index.html

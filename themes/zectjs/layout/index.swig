@@ -1,15 +1,13 @@
 <div id="hero">
     <div class="hero-inner">
-        <ul id="nav">
-            {{ header_menu('nav') }}
-        </ul>
         <img id="logo" src="/logo.png">
-        <h1>Zect.js</h1>
-        <p class="sub">MVVM Made Simple</p>
-        <p class="desc">Zect.js is a library for building interactive web interfaces.
-            <br>It provides data-reactive components with a simple and flexible API.</p>
+        <h1>Zect</h1>
+        <p class="desc">Lightweight Web components and MVVM framework, 11K (gzipped).Support IE 9+
+        </p>
         <p class="buttons">
-            <a href="/guide/" class="button">Get Zect.js</a>
+            <a href="https://raw.githubusercontent.com/switer/zect/master/dist/zect.js" class="button" download="zect.js">
+                Get Zect.js
+            </a>
             <a href="https://github.com/switer/Zect" target="_blank" class="button">Source on GitHub</a>
         </p>
         <ul id="social">
